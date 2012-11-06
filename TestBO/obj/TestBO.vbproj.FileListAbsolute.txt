@@ -1,0 +1,8 @@
+C:\Users\Fareez\Desktop\TestProject\TestBO\bin\TestBO.dll.config
+C:\Users\Fareez\Desktop\TestProject\TestBO\bin\TestBO.dll
+C:\Users\Fareez\Desktop\TestProject\TestBO\bin\TestBO.pdb
+C:\Users\Fareez\Desktop\TestProject\TestBO\bin\TestBO.xml
+C:\Users\Fareez\Desktop\TestProject\TestBO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Fareez\Desktop\TestProject\TestBO\obj\Debug\TestBO.dll
+C:\Users\Fareez\Desktop\TestProject\TestBO\obj\Debug\TestBO.xml
+C:\Users\Fareez\Desktop\TestProject\TestBO\obj\Debug\TestBO.pdb

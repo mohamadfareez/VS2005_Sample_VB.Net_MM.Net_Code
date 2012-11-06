@@ -1,0 +1,560 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TestBO
+</name>
+</assembly>
+<members>
+<member name="M:TestBusiness.UserSecurityRules.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.UserSecurityRules.CheckRulesHook(System.Data.DataSet,System.String)">
+	<summary>
+ Checks business rules against the specified DataTable
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="tableName">Table Name</param>
+	<returns>Logical true if rules passed, otherwise false</returns>
+</member><member name="M:TestBusiness.UserSecurityRules.ValidateAccessLevel(System.Int16)">
+	<summary>
+ Validates the Access Level
+ </summary>
+</member><member name="M:TestBusiness.UserSecurityRules.ValidateSecurityFK(System.String)">
+	<summary>
+ Validates the Security FK
+ </summary>
+</member><member name="M:TestBusiness.UserSecurityRules.ValidateUserFK(System.Int32)">
+	<summary>
+ Validates the User FK
+ </summary>
+</member><member name="T:TestBusiness.UserSecurityRules">
+	<summary>
+ Summary description for UserSecurityRules
+ </summary>
+</member><member name="P:TestBusiness.UserSecurityEntity.AccessLevel">
+	<summary>
+ AccessLevel
+ </summary>
+</member><member name="P:TestBusiness.UserSecurityEntity.SecurityFK">
+	<summary>
+ SecurityFK
+ </summary>
+</member><member name="P:TestBusiness.UserSecurityEntity.UserFK">
+	<summary>
+ UserFK
+ </summary>
+</member><member name="P:TestBusiness.UserSecurityEntity.UserSecurityPK">
+	<summary>
+ UserSecurityPK
+ </summary>
+</member><member name="T:TestBusiness.UserSecurityEntity">
+	<summary>
+ Summary description for UserSecurityEntity
+ </summary>
+</member><member name="P:TestBusiness.UserSecurity.Entity">
+	<summary>
+ Business Entity object
+ </summary>
+</member><member name="P:TestBusiness.UserSecurity.Rules">
+	<summary>
+ Business Rule object
+ </summary>
+</member><member name="M:TestBusiness.UserSecurity.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.UserSecurity.CreateBusinessRuleObject">
+	<summary>
+ Factory method that creates a business rule object
+ </summary>
+	<returns>Reference to the business rule object</returns>
+</member><member name="M:TestBusiness.UserSecurity.HookSetDefaultValues(System.Data.DataRow)">
+	<summary>
+ Set default values on the new row
+ </summary>
+	<param name="dataRow">New DataRow</param>
+</member><member name="T:TestBusiness.UserSecurity">
+	<summary>
+ Summary description for UserSecurity
+ </summary>
+</member><member name="M:TestBusiness.UsersRules.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.UsersRules.CheckRulesHook(System.Data.DataSet,System.String)">
+	<summary>
+ Checks business rules against the specified DataTable
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="tableName">Table Name</param>
+	<returns>Logical true if rules passed, otherwise false</returns>
+</member><member name="M:TestBusiness.UsersRules.ValidateFirstName(System.String)">
+	<summary>
+ Validates the First Name
+ </summary>
+</member><member name="M:TestBusiness.UsersRules.ValidateLastName(System.String)">
+	<summary>
+ Validates the Last Name
+ </summary>
+</member><member name="M:TestBusiness.UsersRules.ValidateUserID(System.String)">
+	<summary>
+ Validates the User ID
+ </summary>
+</member><member name="T:TestBusiness.UsersRules">
+	<summary>
+ Summary description for UsersRules
+ </summary>
+</member><member name="P:TestBusiness.UsersEntity.FirstName">
+	<summary>
+ FirstName
+ </summary>
+</member><member name="P:TestBusiness.UsersEntity.LanguageFK">
+	<summary>
+ LanguageFK
+ </summary>
+</member><member name="P:TestBusiness.UsersEntity.LastName">
+	<summary>
+ LastName
+ </summary>
+</member><member name="P:TestBusiness.UsersEntity.Password">
+	<summary>
+ Password
+ </summary>
+</member><member name="P:TestBusiness.UsersEntity.UserID">
+	<summary>
+ UserID
+ </summary>
+</member><member name="P:TestBusiness.UsersEntity.UserPK">
+	<summary>
+ UserPK
+ </summary>
+</member><member name="T:TestBusiness.UsersEntity">
+	<summary>
+ Summary description for UsersEntity
+ </summary>
+</member><member name="P:TestBusiness.Users.Entity">
+	<summary>
+ Business Entity object
+ </summary>
+</member><member name="P:TestBusiness.Users.Rules">
+	<summary>
+ Business Rule object
+ </summary>
+</member><member name="M:TestBusiness.Users.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.Users.CreateBusinessRuleObject">
+	<summary>
+ Factory method that creates a business rule object
+ </summary>
+	<returns>Reference to the business rule object</returns>
+</member><member name="T:TestBusiness.Users">
+	<summary>
+ Summary description for Users
+ </summary>
+</member><member name="M:TestBusiness.UserRolesRules.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.UserRolesRules.CheckRulesHook(System.Data.DataSet,System.String)">
+	<summary>
+ Checks business rules against the specified DataTable
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="tableName">Table Name</param>
+	<returns>Logical true if rules passed, otherwise false</returns>
+</member><member name="M:TestBusiness.UserRolesRules.ValidateRoleFK(System.Int32)">
+	<summary>
+ Validates the Role FK
+ </summary>
+</member><member name="M:TestBusiness.UserRolesRules.ValidateUserFK(System.Int32)">
+	<summary>
+ Validates the User FK
+ </summary>
+</member><member name="T:TestBusiness.UserRolesRules">
+	<summary>
+ Summary description for UserRolesRules
+ </summary>
+</member><member name="P:TestBusiness.UserRolesEntity.RoleFK">
+	<summary>
+ RoleFK
+ </summary>
+</member><member name="P:TestBusiness.UserRolesEntity.UserFK">
+	<summary>
+ UserFK
+ </summary>
+</member><member name="P:TestBusiness.UserRolesEntity.UserRolesPK">
+	<summary>
+ UserRolesPK
+ </summary>
+</member><member name="T:TestBusiness.UserRolesEntity">
+	<summary>
+ Summary description for UserRolesEntity
+ </summary>
+</member><member name="P:TestBusiness.UserRoles.Entity">
+	<summary>
+ Business Entity object
+ </summary>
+</member><member name="P:TestBusiness.UserRoles.Rules">
+	<summary>
+ Business Rule object
+ </summary>
+</member><member name="M:TestBusiness.UserRoles.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.UserRoles.CreateBusinessRuleObject">
+	<summary>
+ Factory method that creates a business rule object
+ </summary>
+	<returns>Reference to the business rule object</returns>
+</member><member name="M:TestBusiness.UserRoles.HookSetDefaultValues(System.Data.DataRow)">
+	<summary>
+ Set default values on the new row
+ </summary>
+	<param name="dataRow">New DataRow</param>
+</member><member name="T:TestBusiness.UserRoles">
+	<summary>
+ Summary description for UserRoles
+ </summary>
+</member><member name="M:TestBusiness.SecurityRules.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.SecurityRules.CheckRulesHook(System.Data.DataSet,System.String)">
+	<summary>
+ Checks business rules against the specified DataTable
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="tableName">Table Name</param>
+	<returns>Logical true if rules passed, otherwise false</returns>
+</member><member name="M:TestBusiness.SecurityRules.ValidateSecurityPK(System.String)">
+	<summary>
+ Validates the Security PK
+ </summary>
+</member><member name="T:TestBusiness.SecurityRules">
+	<summary>
+ Summary description for SecurityRules
+ </summary>
+</member><member name="P:TestBusiness.SecurityEntity.Description">
+	<summary>
+ Description
+ </summary>
+</member><member name="P:TestBusiness.SecurityEntity.SecurityPK">
+	<summary>
+ SecurityPK
+ </summary>
+</member><member name="T:TestBusiness.SecurityEntity">
+	<summary>
+ Summary description for SecurityEntity
+ </summary>
+</member><member name="P:TestBusiness.Security.Entity">
+	<summary>
+ Business Entity object
+ </summary>
+</member><member name="P:TestBusiness.Security.Rules">
+	<summary>
+ Business Rule object
+ </summary>
+</member><member name="M:TestBusiness.Security.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.Security.CreateBusinessRuleObject">
+	<summary>
+ Factory method that creates a business rule object
+ </summary>
+	<returns>Reference to the business rule object</returns>
+</member><member name="T:TestBusiness.Security">
+	<summary>
+ Summary description for Security
+ </summary>
+</member><member name="M:TestBusiness.RoleSecurityRules.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.RoleSecurityRules.CheckRulesHook(System.Data.DataSet,System.String)">
+	<summary>
+ Checks business rules against the specified DataTable
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="tableName">Table Name</param>
+	<returns>Logical true if rules passed, otherwise false</returns>
+</member><member name="M:TestBusiness.RoleSecurityRules.ValidateRoleFK(System.Int32)">
+	<summary>
+ Validates the Role FK
+ </summary>
+</member><member name="M:TestBusiness.RoleSecurityRules.ValidateSecurityFK(System.String)">
+	<summary>
+ Validates the Security FK
+ </summary>
+</member><member name="T:TestBusiness.RoleSecurityRules">
+	<summary>
+ Summary description for RoleSecurityRules
+ </summary>
+</member><member name="P:TestBusiness.RoleSecurityEntity.AccessLevel">
+	<summary>
+ AccessLevel
+ </summary>
+</member><member name="P:TestBusiness.RoleSecurityEntity.RoleFK">
+	<summary>
+ RoleFK
+ </summary>
+</member><member name="P:TestBusiness.RoleSecurityEntity.RoleSecurityPK">
+	<summary>
+ RoleSecurityPK
+ </summary>
+</member><member name="P:TestBusiness.RoleSecurityEntity.SecurityFK">
+	<summary>
+ SecurityFK
+ </summary>
+</member><member name="T:TestBusiness.RoleSecurityEntity">
+	<summary>
+ Summary description for RoleSecurityEntity
+ </summary>
+</member><member name="P:TestBusiness.RoleSecurity.Entity">
+	<summary>
+ Business Entity object
+ </summary>
+</member><member name="P:TestBusiness.RoleSecurity.Rules">
+	<summary>
+ Business Rule object
+ </summary>
+</member><member name="M:TestBusiness.RoleSecurity.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.RoleSecurity.CreateBusinessRuleObject">
+	<summary>
+ Factory method that creates a business rule object
+ </summary>
+	<returns>Reference to the business rule object</returns>
+</member><member name="M:TestBusiness.RoleSecurity.HookSetDefaultValues(System.Data.DataRow)">
+	<summary>
+ Set default values on the new row
+ </summary>
+	<param name="dataRow">New DataRow</param>
+</member><member name="T:TestBusiness.RoleSecurity">
+	<summary>
+ Summary description for RoleSecurity
+ </summary>
+</member><member name="M:TestBusiness.RolesRules.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.RolesRules.CheckRulesHook(System.Data.DataSet,System.String)">
+	<summary>
+ Checks business rules against the specified DataTable
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="tableName">Table Name</param>
+	<returns>Logical true if rules passed, otherwise false</returns>
+</member><member name="M:TestBusiness.RolesRules.ValidateDescription(System.String)">
+	<summary>
+ Validates the Description
+ </summary>
+</member><member name="T:TestBusiness.RolesRules">
+	<summary>
+ Summary description for RolesRules
+ </summary>
+</member><member name="P:TestBusiness.RolesEntity.Description">
+	<summary>
+ Description
+ </summary>
+</member><member name="P:TestBusiness.RolesEntity.RolePK">
+	<summary>
+ RolePK
+ </summary>
+</member><member name="T:TestBusiness.RolesEntity">
+	<summary>
+ Summary description for RolesEntity
+ </summary>
+</member><member name="P:TestBusiness.Roles.Entity">
+	<summary>
+ Business Entity object
+ </summary>
+</member><member name="P:TestBusiness.Roles.Rules">
+	<summary>
+ Business Rule object
+ </summary>
+</member><member name="M:TestBusiness.Roles.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.Roles.CreateBusinessRuleObject">
+	<summary>
+ Factory method that creates a business rule object
+ </summary>
+	<returns>Reference to the business rule object</returns>
+</member><member name="T:TestBusiness.Roles">
+	<summary>
+ Summary description for Roles
+ </summary>
+</member><member name="M:TestBusiness.NegeriRules.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.NegeriRules.CheckRulesHook(System.Data.DataSet,System.String)">
+	<summary>
+ Checks business rules against the specified DataTable
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="tableName">Table Name</param>
+	<returns>Logical true if rules passed, otherwise false</returns>
+</member><member name="M:TestBusiness.NegeriRules.ValidateDeskripsi(System.String)">
+	<summary>
+ Validates the Deskripsi
+ </summary>
+</member><member name="T:TestBusiness.NegeriRules">
+	<summary>
+ Summary description for NegeriRules
+ </summary>
+</member><member name="P:TestBusiness.NegeriEntity.Deskripsi">
+	<summary>
+ Deskripsi
+ </summary>
+</member><member name="P:TestBusiness.NegeriEntity.KodNegeri">
+	<summary>
+ KodNegeri
+ </summary>
+</member><member name="P:TestBusiness.NegeriEntity.PK_Negeri">
+	<summary>
+ PK_Negeri
+ </summary>
+</member><member name="T:TestBusiness.NegeriEntity">
+	<summary>
+ Summary description for NegeriEntity
+ </summary>
+</member><member name="P:TestBusiness.Negeri.Entity">
+	<summary>
+ Business Entity object
+ </summary>
+</member><member name="P:TestBusiness.Negeri.Rules">
+	<summary>
+ Business Rule object
+ </summary>
+</member><member name="M:TestBusiness.Negeri.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.Negeri.CreateBusinessRuleObject">
+	<summary>
+ Factory method that creates a business rule object
+ </summary>
+	<returns>Reference to the business rule object</returns>
+</member><member name="T:TestBusiness.Negeri">
+	<summary>
+ Summary description for Negeri
+ </summary>
+</member><member name="M:TestBusiness.IndividuRules.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.IndividuRules.CheckRulesHook(System.Data.DataSet,System.String)">
+	<summary>
+ Checks business rules against the specified DataTable
+ </summary>
+	<param name="ds">DataSet</param>
+	<param name="tableName">Table Name</param>
+	<returns>Logical true if rules passed, otherwise false</returns>
+</member><member name="T:TestBusiness.IndividuRules">
+	<summary>
+ Summary description for IndividuRules
+ </summary>
+</member><member name="P:TestBusiness.IndividuEntity.Alamat">
+	<summary>
+ Alamat
+ </summary>
+</member><member name="P:TestBusiness.IndividuEntity.FK_Negeri">
+	<summary>
+ FK_Negeri
+ </summary>
+</member><member name="P:TestBusiness.IndividuEntity.Nama">
+	<summary>
+ Nama
+ </summary>
+</member><member name="P:TestBusiness.IndividuEntity.NoMyKad">
+	<summary>
+ NoMyKad
+ </summary>
+</member><member name="P:TestBusiness.IndividuEntity.PK_Individu">
+	<summary>
+ PK_Individu
+ </summary>
+</member><member name="P:TestBusiness.IndividuEntity.Poskod">
+	<summary>
+ Poskod
+ </summary>
+</member><member name="P:TestBusiness.IndividuEntity.TkhLahir">
+	<summary>
+ TkhLahir
+ </summary>
+</member><member name="T:TestBusiness.IndividuEntity">
+	<summary>
+ Summary description for IndividuEntity
+ </summary>
+</member><member name="P:TestBusiness.Individu.Entity">
+	<summary>
+ Business Entity object
+ </summary>
+</member><member name="P:TestBusiness.Individu.Rules">
+	<summary>
+ Business Rule object
+ </summary>
+</member><member name="M:TestBusiness.Individu.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="M:TestBusiness.Individu.CreateBusinessRuleObject">
+	<summary>
+ Factory method that creates a business rule object
+ </summary>
+	<returns>Reference to the business rule object</returns>
+</member><member name="M:TestBusiness.Individu.HookSetDefaultValues(System.Data.DataRow)">
+	<summary>
+ Set default values on the new row
+ </summary>
+	<param name="dataRow">New DataRow</param>
+</member><member name="T:TestBusiness.Individu">
+	<summary>
+ Summary description for Individu
+ </summary>
+</member><member name="M:TestBusiness.ABusinessObject`1.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="T:TestBusiness.ABusinessObject`1">
+	<summary>
+ Application-level Business Object class
+ </summary>
+</member><member name="M:TestBusiness.AAppTest.#ctor">
+	<summary>
+ Constructor
+ </summary>
+</member><member name="T:TestBusiness.AAppTest">
+	<summary>
+ Summary description for ABusinessTest
+ </summary>
+</member><member name="T:TestBusiness.AAppTestFactory">
+	<summary>
+ AAppTestFactory
+ </summary>
+</member><member name="T:TestBusiness.ABusinessEntity">
+	<summary>
+ Application-level Business Entity class
+ </summary>
+</member><member name="M:TestBusiness.ABusinessRule.#ctor(OakLeaf.MM.Main.Business.ImmBusinessRuleHost)">
+	<summary>
+ Constructor
+ </summary>
+	<param name="hostObject">Host object</param>
+</member><member name="T:TestBusiness.ABusinessRule">
+	<summary>
+ Application-level Business Rule class
+ </summary>
+</member>
+</members>
+</doc>
