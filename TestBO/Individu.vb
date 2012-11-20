@@ -73,5 +73,12 @@ Partial Public Class Individu
 
 		'' Store the hard-coded default values via the entity object
 		Entity.PK_Individu = 0
-	End Sub
+    End Sub
+
+    'Added By Fareez On 20121120
+    Public Function GetAllListIndividu(ByVal Nama As String) As DataSet
+        Dim param1 As IDbDataParameter = Me.CreateParameter("@Nama", "%" & Trim(Nama) & "%")
+        Dim lcSql As String = "SELECT * FROM Individu WHERE Nama LIKE @Nama"
+        Return Me.GetDataSet(lcSql, param1)
+    End Function
 End Class
