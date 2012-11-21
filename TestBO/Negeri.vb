@@ -61,5 +61,11 @@ Partial Public Class Negeri
 	''' <returns>Reference to the business rule object</returns>
 	Protected Overrides Function CreateBusinessRuleObject() As mmBusinessRule
 		Return New NegeriRules(Me)
-	End Function
+    End Function
+
+    ''Added By Fareez On 20121120
+    'Public Function GetAllListNegeri() As DataSet
+    '    Dim lcSql As String = "SELECT PK_Negeri, KodNegeri, Deskripsi FROM Negeri"
+    '    Return Me.GetDataSet(lcSql)
+    'End Function
 End Class

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>dsTest</Name>
+  <DataSourceID>822f0e37-ff3d-40d7-a5fa-d1c98111b672</DataSourceID>
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=FAREEZ-PC\SQLEXPRESS2005;Initial Catalog=TestProject</ConnectString>
+  </ConnectionProperties>
+</RptDataSource>

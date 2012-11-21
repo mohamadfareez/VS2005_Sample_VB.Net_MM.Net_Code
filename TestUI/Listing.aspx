@@ -3,46 +3,49 @@
     <div style="text-align: center">
         <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
             <tr>
-                <td style="width: 100px">
-                    <strong><span style="text-decoration: underline">Halaman Senarai Pengguna</span></strong></td>
-            </tr>
-            <tr>
-                <td style="width: 100px">
+                <td style="height: 20px" align="center">
                 </td>
             </tr>
             <tr>
-                <td style="width: 100px">
+                <td style="width: 100px" align="center">
+                    <strong><span style="text-decoration: underline">Halaman Senarai Pengguna</span></strong></td>
+            </tr>
+            <tr>
+                <td style="height: 20px" align="center">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
                     Nama Pengguna :
                     <mm:mmTextBox ID="txtCariNamaPengguna" runat="server"></mm:mmTextBox></td>
             </tr>
             <tr>
-                <td style="width: 100px">
+                <td style="height: 12px" align="center">
                 </td>
             </tr>
             <tr>
-                <td style="width: 100px">
+                <td align="center">
                     <mm:mmButton ID="btnCari" runat="server" Text="CARI" /></td>
             </tr>
             <tr>
-                <td style="width: 100px">
+                <td style="height: 12px" align="center">
                 </td>
             </tr>
             <tr>
-                <td align="center" style="width: 100px">
+                <td align="center">
                     <mm:mmGridView ID="gvList" runat="server" AccessLevel="Full" AutoGenerateColumns="False"
-                        BackColor="#CCCCCC" BindingSource="" BindingSourceMember="" BorderColor="#999999"
+                        BackColor="#CCCCCC" BorderColor="#999999"
                         BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ControlID="00000000-0000-0000-0000-000000000000"
-                        DataSourceID="odsGV" ForeColor="Black" IsPostBack="False" SecuritySetup="True"
-                        UserFieldName="">
+                        DataSourceID="odsGV" ForeColor="Black" IsPostBack="False" SecuritySetup="True">
                         <FooterStyle BackColor="#CCCCCC" />
                         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
                         <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
                         <Columns>
                             <asp:BoundField DataField="Nama" HeaderText="Nama" />
                             <asp:BoundField DataField="NoMyKad" HeaderText="No MyKad" />
-                            <asp:BoundField DataField="TkhLahir" HeaderText="Tarikh Lahir" />
+                            <asp:BoundField DataField="TkhLahir" HeaderText="Tarikh Lahir" DataFormatString="{0:dd/MM/yyyy}"  />
                             <asp:HyperLinkField DataNavigateUrlFields="PK_Individu" DataNavigateUrlFormatString="Listing.aspx?Value={0}"
-                                DataTextFormatString="{0:dd/MM/yyyy}" Text="LIHAT" />
+                               Text="LIHAT" />
                         </Columns>
                         <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
                         <RowStyle BackColor="White" />

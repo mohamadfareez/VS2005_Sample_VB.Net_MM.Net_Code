@@ -51,7 +51,7 @@ Partial Public Class Individu
     ''' </summary>
     Public Sub New()
         Me.TableName = "Individu"
-        Me.PrimaryKey = ""
+        Me.PrimaryKey = "PK_Individu"
 		Me.DefaultCommandType = CommandType.Text
     End Sub
 
