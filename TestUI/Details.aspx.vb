@@ -11,7 +11,7 @@ Imports TestBusiness
 ''' Summary description for Details
 ''' </summary>
 Partial Class Details
-    Inherits mmBusinessWebPage
+    Inherits TestBusinessWebPage
 
     'Declare Table Object
     Protected oIndividu As New Individu
@@ -24,12 +24,16 @@ Partial Class Details
         Me.oIndividu = CType(Me.RegisterBizObj(New Individu), Individu)
 
         'Checking id session no value redirect to listing form else load the data by primary key
-        If CInt(Session("ValueID")) = 0 Then
+        If CInt(Session("ValueID")) = 0 AndAlso Session("Transaksi") = "Kemaskini" Then
             Me.Response.Redirect("Listing.aspx")
         Else
             If Not Me.IsPostBack Then 'First time page loaded
-                'Load data by primary key pass by session valueid
-                Me.oIndividu.LoadRow(Session("ValueID"))
+                If Session("Transaksi") = "Kemaskini" Then
+                    'Load data by primary key pass by session valueid
+                    Me.oIndividu.LoadRow(Session("ValueID"))
+                Else
+                    Me.oIndividu.NewRow()
+                End If
                 'Save dataset to session after load
                 Session("dsIndividu") = Me.oIndividu.DataSet()
             Else 'Any transaction event on the same page

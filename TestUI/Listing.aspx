@@ -7,7 +7,7 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 100px" align="center">
+                <td align="center">
                     <strong><span style="text-decoration: underline">Halaman Senarai Pengguna</span></strong></td>
             </tr>
             <tr>
@@ -25,7 +25,15 @@
             </tr>
             <tr>
                 <td align="center">
-                    <mm:mmButton ID="btnCari" runat="server" Text="CARI" /></td>
+                    &nbsp;<table border="0" cellpadding="1" cellspacing="1">
+                        <tr>
+                            <td style="width: 100px">
+                                <mm:mmButton ID="btnCari" runat="server" Text="CARI" /></td>
+                            <td style="width: 100px">
+                                <mm:mmButton ID="btnBaru" runat="server" Text="BARU" /></td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
             <tr>
                 <td style="height: 12px" align="center">

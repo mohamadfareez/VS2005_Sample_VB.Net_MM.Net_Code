@@ -45,4 +45,7 @@ Public Class UserLogin
         Me.lblErrorMessage.Text = Me.GetMessage("This computer is no longer logged in")
     End Sub
 
+    Public Overrides Sub HookUserAuthenticated(ByVal userPK As Object)
+        Me.Response.Redirect("Listing.aspx")
+    End Sub
 End Class
